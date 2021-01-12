@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* не дает прибавлять падинги по 20 пикселей */
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff; /* цвет страницы на сайте */
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+.welcome{
+    width: 100%;
+    height: 100vh;
+    padding: 116px;
+    background-image: url("./images/bg-image.jpg");
+    background-size: cover; /* расстянуться по всему блоку , на всю его велечену */
+    position: relative;
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;   /*  выравнивается в линию  */
+    color: #ededed;
+    margin-bottom: 387px;
+}
+.logo{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1.25px;
+}
+.menuWrap{
+    margin-left: auto; /*  menu отталкивается от лого и прилепает в левый край  */
+    display: flex; /* выравнивание в линию  */
+    align-items: center; /* два элемента выравниваются по центру */
+}
+.menu{
+    text-transform: uppercase;
+    color: #ededed;
+    letter-spacing: 1.25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.burger{
+    margin-left: 7px;
+}
+.line{
+    width: 19px;
+    height: 4px;
+    background-color: #ededed;
+    margin-bottom: 3px;
+    border-radius: 10px;
+}
+.line:last-child{ /* у последнего элементы убрать стиль,,,,*/
+    margin-bottom: 0;
+}
+.welcomeContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* выравнялось по правому краю  */
+    color: #ededed;
+    letter-spacing: 1.25px;
+}
+.welcomeTitle{
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+.welcomeDiscription{
+    font-size: 24px;
+    line-height: 40px;
+    text-align: right; /* подвинуть текст вправл */
+    width: 382px;
+}
+.welcomeCaption{
+    font-size: 18px;
+    line-height: 40px;
+    font-style: italic;
+    font-weight: 300;
+}
+.welcomeBtn{
+    height: 67px;
+    width: 45px;
+    border: 3px solid #ededed;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 86px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
